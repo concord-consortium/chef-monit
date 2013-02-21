@@ -54,6 +54,6 @@ end
 # build monitrc files
 %w[load ssh].each do |conf|
   monit_monitrc conf do
-    variables({ category: "system" })
+    variables({ :category => "system" })
   end
 end
